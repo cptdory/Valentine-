@@ -36,11 +36,11 @@
             noBtn.addEventListener("click", function () {
                 scale += 0.2;
                 yesBtn.style.transform = `scale(${scale})`;
-                noBtn.style.marginLeft = `${scale * 2}rem`; 
-                cardTitle.style.fontSize = `${1 + scale * .1}rem`;
-                cardTitle.style.marginBottom = `${scale * 10}px`; 
+                noBtn.style.marginLeft = `${scale * 20}px`; 
+                cardTitle.style.fontSize = `${1 + scale * .2}rem`;
+                cardTitle.style.marginBottom = `${scale * 20}px`; 
                 
-                if (scale >= 10) {
+                if (scale >= 5) {
                     noBtn.style.display = "none";
                     yesBtn.style.position = "fixed";
                     yesBtn.style.top = "50%";
